@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elementos en formularios en htm5</title>
+</head>
+<body>
+<header><h1>Elementos en formularios en htm5</h1></header>
+
+<form id=formulario1 method="post"   action="" >
+    <label for="id_nombre">Teclee nombre : </label>
+    <input id=id_nombre name="Nombre" type="text" value="escriba su nombre aquí"> <br>
+    <br>
+
+    <label for="id_apellido">Teclee apellido : </label>
+    <input id=id_apellido name="apellido" type="text" value="escriba su apellido aquí">
+    <br><br>
+    <label for="idioma">Seleccione un idioma: </label>
+    <input id="idioma" list="idiomas" name="idioma">
+    <datalist id="idiomas">
+        <option value="Ingles"></option>
+        <option value="Aleman"></option>
+        <option value="Español"></option>
+        <option value="Frances"></option>
+    </datalist>
+
+    <label for="list_idiomas">Sugerencia de idioma: </label>
+    <input id="list_idiomas" list="sugerencias" >
+    <datalist id="sugerencias">
+    <option label="Es" value="Español"></option>
+    <option label="En" value="Ingles"></option>
+    <option label="Fr" value="Frances"></option>
+        </datalist>
+
+    <fieldset>
+        <legend>seleccione opcion</legend>
+        <input type="radio" id="id_gm" name="gm" value="Opcion1"> <label for=""></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Seleccione tipo de transporte</legend>
+        <input type="checkbox" id="vehiculo1" name="vehiculo1" value="bicicleta" checked> <label for="vehiculo1">Bicicleta</label><br>
+        <input type="checkbox" id="vehiculo2" name="vehiculo2" value="moto" checked> <label for="vehiculo2">Moto</label><br>
+        <input type="checkbox" id="vehiculo3" name="vehiculo3" value="auto"> <label for="vehiculo3">Auto</label><br>
+    </fieldset>
+    <br>
+
+    <label for="id_clave">Teclee pasword</label>
+    <input type="text">
+
+    <br>
+    <div>
+        <label for="file">Seleccione los archivos a enviar</label><br>
+        <input type="file" id="file" name="file" value="100" multiple accept=".jpg, jpeg, .png">
+    </div>
+    <div>
+        <input type="button" value="enviar"><button name="btn_enviar">Click para enviar</button>
+    </div>
+</form>
+<br><br><br>
+
+<form action=""></form>
+</body>
+</html>
