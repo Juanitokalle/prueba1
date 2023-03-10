@@ -1,0 +1,10 @@
+#ejercicio1 a { color: #b02323; text-decoration: none;
+}
+#ejercicio2 a {text-decoration: none; background-color: #ea2121; color:white; padding: .7em;}
+#ejercicio2 a:hover {background-color: #b02323;}
+article {background-color: white; box-shadow: 5px 5px 2px #cecece; height: auto; width: auto; border-left: solid .2em blue; padding-top: 1px; padding-left: 10px; padding-bottom: 1px }
+#ejercicio3 .one a {color:blue;}
+#ejercicio3 a.one:hover {color: #ea2121;}
+#ejercicio3 a.two:hover {font-size: 150%;}
+#ejercicio3 a.three:hover {background-color: #fffb00}
+#ejercicio3 a.four:hover {font-family: "Bradley Hand ITC"}
