@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="imagenes/png" href="" />
+    <title>Navigation menu</title>
+    <style>
+    h1 {
+      text-align: center;
+    }
+    /*fondo del <ul> negro,quitamos margenes y aire(padding)
+     y quitamos puntitos de cada elemento de la lista con  list-style-type: none;*/
+    ul {
+      overflow: hidden;
+      background-color: black;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-block;
+      padding: 14px 16px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
+
+    li a:hover {
+      background-color: rgba(77, 65, 65, 0.96)
+    }
+
+    .active {
+      background-color: #ea2121;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Navigation menu</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section></section>
+    <br /><br />
+    <footer>
+      <details>
+        <summary> &copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+      </details>
+
+    </footer>
+  </body>
+</html>

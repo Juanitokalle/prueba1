@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="imagenes/png" href="" />
+    <title>Navigator Bars</title>
+    <style>
+
+      /*con esto damos margin y padding 0 al texto de la lista, quitamos los puntos con list-style
+      y damos un ancho 200px con widh. Con background-color cambiamos el color del fondo
+       */
+      ul {
+        margin:0;
+        padding: 0;
+        list-style: none;
+        width: 200px;
+        background-color: #efefed;
+      }
+      /*seleccionamos q para los <a> dentro de una lista color de fuente negro, quitamos la linea de
+       subrrallado con "text-decoration:none" y le damos padding     */
+       ul li a {
+         color: black;
+         display: block;
+         text-decoration: none;
+         padding: 8px 16px;
+      }
+       /*cuando pasemos por encima de las <a> hijas directas de una list, aplikcar estos efectos*/
+      li a:hover {
+        background-color: #6b6565;
+        color: white;
+        transition: 0.8s;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Vertical Navigation Bar</h1>
+    </header>
+    <section>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </section>
+    <br />
+    <footer>
+      <details>
+        <summary>&copy; Tame Formacion</summary>
+        <p>Todos los derechos reservados</p>
+      </details>
+     
+    </footer>
+  </body>
+</html>

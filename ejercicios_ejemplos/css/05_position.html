@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="imagenes/png" href="" />
+    <title>Position</title>
+
+    <style>
+    div.container {
+     position: relative;
+     }
+   header, h2, h2+p {display: none;}
+
+   .topleft {
+     position: absolute;
+     top: 8px;
+     left: 16px;
+     font-size: 18px;
+     font-weight: bold;
+   }
+   .topright {
+     position: absolute;
+     top: 8px;
+     right: 16px;
+     font-size: 18px;
+     font-weight: bold;
+   }
+   .bottomleft {
+     position: absolute;
+     bottom: 8px;
+     left: 16px;
+     font-size: 18px;
+     font-weight: bold;
+   }
+   .bottomright {
+     position: absolute;
+     bottom: 8px;
+     right: 16px;
+     font-size: 18px;
+     font-weight: bold;
+   }
+   .center{
+     position: absolute;
+     top: 50%;
+     width: 100%;
+     text-align: center;
+     font-size: 18px;
+     font-weight: bold;
+
+   }
+   img {
+     width: 100%;
+     height: auto;
+     opacity: 0.3;
+     }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <h1>Position</h1>
+    </header>
+    <section>
+      <h2>Image Text</h2>
+      <p>Add some text to an image in the top left corner:</p>
+      <div class="container">
+        <img src="takers.jpg" alt="Takers" />
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Centered</div>
+      </div>
+    </section>
+    <footer>
+      <details>
+        <summary>&copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+      </details>
+
+    </footer>
+  </body>
+</html>
