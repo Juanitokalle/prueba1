@@ -4,15 +4,62 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
-    * {font-family:'Courgette', cursive; font-size: 30px;}
+    @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+    @font-face {
+      font-family: 'Courgette';
+      src: url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+    }
+
+    .myfont_google {
+      font-family: 'Courgette', cursive;
+      text-decoration: underline overline #FF3028;
+      letter-spacing: 6px;
+      initial-letter: 3;
+
+    }
+
+    @font-face {
+      font-family: RealTrap;
+      src: url("../fonts/RealTrap.ttf");
+    }
+    .myfont_RealTrap {
+      font-family: RealTrap, cursive;
+      font-size: 170%;
+    }
+
+    @font-face {
+      font-family: zombie;
+      src: url("../fonts/zombie-queen.xed.ttf");
+    }
+    .myfont_zombie-queen {
+      font-family: zombie, sans-serif;
+      font-size: 40px;
+      color: #000000;
+      text-align: justify-all;
+      font-style: oblique 90deg;
+      text-shadow: 1px 2px 1px #67c020;
+
+    }
+
+
+
+    /** {font-family: "zombie-queen", cursive; font-size: 20px;
+    }*/
+
+
+
+    /** {font-family:'Courgette', cursive; font-size: 20px;}*/
+
+   /* #font {font-family: }*/
   </style>
 
 </head>
 <body>
-<header><h1>Fuentes de google</h1></header>
+<header><h1 class="myfont_google">Fuentes de google</h1></header>
 <section>
-  <div>
+  <div class="myfont_RealTrap">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       Commodi, culpa, doloremque exercitationem inventore laboriosam
       libero maiores praesentium qui quia quis ratione reiciendis
@@ -20,24 +67,17 @@
       Ab cum dolor facilis reprehenderit rerum! Aperiam asperiores
       delectus dignissimos, ea eius enim esse facilis fugit hic id
       itaque iure laboriosam maxime minima nam officiis perspiciatis p
-      orro provident quam quos reiciendis, reprehenderit repudiandae r
-      erum, tempora ullam voluptate voluptatibus! Dolore laborum perfe
-      rendis soluta veritatis? Aliquam amet atque culpa cupiditate dele
-      niti dolores id illo ipsam iste natus, nihil non obcaecati quaer
-      at quas quibusdam quo reiciendis rem repellendus rerum sunt ve
-      l veritatis voluptas. A aliquid corporis laborum, maxime minus
-      quidem. Consequuntur debitis ea eius, est fuga neque odit qui
-      sint? Accusamus aliquid aut beatae consequatur distinctio do
-      loremque ducimus eveniet explicabo fuga fugit ipsum itaque la
-      bore, laborum nihil non nostrum omnis quo ratione reprehende
-      it sint sit temporibus ut vitae! A beatae dolorem eius facilis nobis?</p>
+
+      </p>
   </div>
-  <div>
+  <div class="myfont_zombie-queen">
+    <article id="font">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda
     consequuntur, corporis culpa cum cumque deleniti, dolores enim eum, facere fugiat
     incidunt libero neque nobis officiis praesentium provident quas recusandae sed similique soluta
     suscipit tempora tempore unde vel veritatis voluptate. Aliquam, id perferendis! Ab beatae consequuntur
     dolorem dolorum, labore quia.
+    </article>
   </div>
 </section>
 
