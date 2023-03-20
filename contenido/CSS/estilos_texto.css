@@ -1,0 +1,88 @@
+
+/*Hacer texto responsive*/
+/*utilizamos "vw" para habilitar la tipografía responsiva. 1vw es igual al uno por ciento del ancho de la
+   ventana gráfica, lo que significa que si configuras el tamaño del tipo de letra con vw, siempre estará en
+   relación con el tamaño de la ventana gráfica.*/
+h1 {font-size: 10vw;}
+p.p1 {font-size: 5vw;}
+#id1 {font-size: 1.5em; font-family: "Elephant", "Calibri", "sans-serif";}
+p span.negrita {
+    background-color: rgba(0, 191, 255, 0.22);
+    /*modo simplificado para formato fuente utilizamos font: seguido como mínimo atributo size y familia, y luego algún
+     atributo mas q no son obligados como style, variant, weight y height*/
+    font: 16px Elephant bold;
+}
+
+/*Para decorar primera linea de un párrafo, se pone el selector d los párrafos
+ a los que quieres aplicar estilo seguido de "::first-line" y en este caso pues
+ "line-trough" que es una linea tachando el texto, text-decoration tb podemos aplicar
+ subrayado con "underline", subrayado superior con "overline", "blink" para que parpadee el texto*/
+p#id2:first-line {
+    text-decoration: line-through;
+}
+
+/*"letter-spacing" para separación entre letras de un texto,
+le damos un valor en px, em o pt.*/
+p#id2 {
+    letter-spacing: 2px;
+    /*"word-spacing:" espaciado entre palabras en en px, em o pt. */
+    word-spacing: 1px;
+    /*line-height para interlineado. lo expresamos como <normal> q es el valor por defecto(1.2),
+     <número> sin unidades multiplicado por el propio tamaño de fuente del elemento,
+     <porcentaje> El valor calculado es este <porcentaje> multiplicado por el tamaño de letra del elemento calculado.
+
+     -(ejemplos)Todas las reglas debajo ofrecen la misma line-height resultante:
+       div { line-height: 1.2;   font-size: 10pt; }    número/unitless
+       div { line-height: 1.2em; font-size: 10pt; }   longitud
+       div { line-height: 120%;  font-size: 10pt; }    porcentaje*/
+    line-height: 220%;
+
+    /*
+     Valores clave
+    text-transform: capitalize; (mayuscula para la primera letra de cada palabra)
+    text-transform: uppercase;  (texto seleccionado en mayuscula)
+    text-transform: lowercase;  (texto seleccionado en minuscula)
+    text-transform: none; (Es una palabra clave que previene que sea cambiado el tamaño de los caracteres)
+    text-transform: full-width; */
+
+}
+
+/*text-indent (en-US): Especifica el espacio horizontal o tabulado que debe dejarse antes del comienzo
+     de la primera línea del contenido de párrafo.*/
+
+p.p1 {
+    text-indent: 15px;
+}
+article.bordes {
+    width: 300px;
+    height: 300px;
+    background-color: #7ed23b;
+    /*propiedades de sombra CSS3 : para bordes redondeados utilizamos "border-radius"
+
+    1valor se aplica a las cuatro esquinas,
+    2valores se aplica a "top-left-and-bottom-right | top-right-and-bottom-left"
+    3valores definirian  "top-left | top-right-and-bottom-left | bottom-right" */
+    border: solid 3px #ea2121;
+    border-radius: 40px;
+}
+    .texto_degradado {
+        background: -webkit-linear-gradient(black,red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    img {
+        border-radius: 40px 10px;
+        /*position: relative;
+        display: inline-block;
+        float: left;*/
+    }
+    /*Texto en columnas*/
+.parrafo_columnas {
+    column-count: 3;
+    column-rule: 2px solid #000000;
+}
+
+
+
+
+
