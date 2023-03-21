@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>CSS Responsive Site </title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            background-color: #efefed;
+            padding: 10px;
+            margin: 1px;
+            box-shadow: 6px 4px gray;
+        }
+        ul {
+            float: left;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 1px;
+            list-style: none;
+            width: 20%;
+            background-color: #efefed;
+            text-align: left;
+            padding-left: 1px;
+        }
+
+        ul li a {
+            text-align: left;
+            color: black;
+            display: block;
+            text-decoration: none;
+            padding: 5px 1px;
+
+        }
+        section {
+            overflow: auto;
+            padding: 10px;
+
+        }
+        article.texto {
+            display: inline-block;
+            padding: 8px 12px;
+            float: left;
+            width: 55%;
+            margin: 10px;
+        }
+
+        /*img {
+            float: left;
+            display: inline-block;
+            width: 100%;
+            height: auto;
+        }*/
+        img {
+            align-content: center;
+            width: 100%;
+            height: auto;
+        }
+
+        aside.aside {
+            width: 20%;
+            background: lightskyblue;
+            display: inline-block;
+            float: right;
+            padding-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            border-radius: 0 5% 0 5%;
+            box-shadow: 4px 6px gray;
+        }
+
+
+        footer {
+            position: absolute;
+            top: 90%;
+            width: 100%;
+            background-color: slategray;
+            color: white;
+            padding: 15px 40px;
+            margin: 5px 0 5px 0;
+        }
+
+        @media (max-width: 600px){
+            header {
+
+            }
+
+
+        }
+
+
+
+      
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Cinque Terre</h1>
+    <h3>Resize the browser window</h3>
+</header>
+
+<section>
+    <nav>
+        <ul>
+            <li><a href="../../../../Downloads#">Home</a></li>
+            <li><a href="../../../../Downloads#">News</a></li>
+            <li><a href="../../../../Downloads#">Contact</a></li>
+            <li><a href="../../../../Downloads#">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <article class="texto">
+        <h2>The Walk</h2>
+        <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending
+            on the weather conditions and your physical shape.</p>
+        <figure>
+            <img src="/ejercicios_ejemplos/css/airfrance.jpg" alt="Avion airfrance">
+        </figure>
+
+    </article>
+
+    <aside class="aside">
+        <h2>What?</h2>
+        <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+        <h2>Where?</h2>
+        <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+        <h2>Price?</h2>
+        <p>The Walk is free!</p>
+    </aside>
+</section>
+
+
+<footer> This web page is a
+    part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content
+    respond to the resizing.
+</footer>
+</body>
+</html>
