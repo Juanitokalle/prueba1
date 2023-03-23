@@ -1,0 +1,62 @@
+@font-face {
+    font-family: RealTrap;
+    src: url("RealTrap.ttf");
+}
+.myfont_RealTrap {
+    font-family: RealTrap, cursive;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: honeydew;
+
+}
+
+h1 {
+
+    text-align: center;
+    background: rgba(221, 221, 221, 0.78);
+    padding: 20px 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ul {
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    background-color: rgba(77, 65, 65, 0.96)
+}
+
+.active {
+    background-color: #ea2121;
+}
+
+div.header_nav ´{
+    display: inline-block;
+    width: 50%;
+
+
+}
